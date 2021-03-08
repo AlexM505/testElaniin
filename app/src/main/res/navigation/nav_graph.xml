@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/regionsFragment">
+
+    <fragment
+        android:id="@+id/regionsFragment"
+        android:name="com.alxd.testelaniin.ui.regions.RegionsFragment"
+        android:label="fragment_regions"
+        tools:layout="@layout/fragment_regions" >
+        <action
+            android:id="@+id/action_regionsFragment_to_listTeamsFragment"
+            app:destination="@id/listTeamsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listTeamsFragment"
+        android:name="com.alxd.testelaniin.ui.teams.ListTeamsFragment"
+        android:label="fragment_list_teams"
+        tools:layout="@layout/fragment_list_teams" >
+        <action
+            android:id="@+id/action_listTeamsFragment_to_addTeamsFragment"
+            app:destination="@id/addTeamsFragment" />
+        <argument
+            android:name="currentRegion"
+            app:argType="com.alxd.testelaniin.model.region.Results" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTeamsFragment"
+        android:name="com.alxd.testelaniin.ui.teams.AddTeamsFragment"
+        android:label="fragment_add_teams"
+        tools:layout="@layout/fragment_add_teams" >
+        <argument
+            android:name="currentRegion"
+            app:argType="com.alxd.testelaniin.model.region.Results" />
+        <action
+            android:id="@+id/action_addTeamsFragment_to_listTeamsFragment"
+            app:destination="@id/listTeamsFragment" />
+    </fragment>
+</navigation>

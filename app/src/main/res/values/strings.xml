@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">testElaniin</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="sign_in_with_google">Inicia sesion con Google</string>
+    <string name="regiones">Regiones</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_team">Debe seleccionar un minimo de 3 pokemon para formar parte de su equipo y un max de 6</string>
+    <string name="nombre_de_tu_equipo">Nombre de tu equipo</string>
+    <string name="crear_equipo">Crear Equipo</string>
+    <string name="mi_equipo_1">mi equipo 1</string>
+    <string name="region">Region</string>
+    <string name="selecciona_tus_pokemon">Selecciona tus pokemon</string>
+</resources>
